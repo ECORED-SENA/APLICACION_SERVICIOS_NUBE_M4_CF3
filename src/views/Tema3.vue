@@ -1,0 +1,220 @@
+<template lang="pug">
+.curso-main-container.pb-3
+  BannerInterno
+  .container.tarjeta.tarjeta--blanca.p-4.p-md-5
+    .titulo-principal
+        .titulo-principal__numero
+          span 3
+        h1 Comunicación entre clases
+    p.mb-5 Las clases, al igual que los objetos, no existen de modo aislado. La Orientación a Objetos (POO) intenta modelar aplicaciones del mundo real tan fielmente como sea posible y por lo tanto debe reflejar estas relaciones entre clases y objetos. Por consiguiente, a continuación, podrá observar la comunicación entre clases:
+    .row.mb-5.justify-content-center
+      .col-lg-6.mb-5.mb-lg-0
+        //- .bloque-texto-b debe ir acompañado de una de una de estas clases => 
+        //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
+        .bloque-texto-b.color-primario.p-4
+          .bloque-texto-b__texto
+            h3.mb-0 La comunicación entre clases es posible solo a través de la parte publica de las clases correspondientes.
+    p.mb-5 
+      b Según G. Booch [Booch, 94] 
+      b-none existen tres clases básicas de relaciones entre los objetos:
+    .row.mb-5.justify-content-center
+      .col-lg-3
+        img.mb-3(src="@/assets/curso/img32.svg", alt="Texto que describa la imagen" style="width: 75px").m-auto
+        .cuadro--cyanclaro.p-4
+          p.fw-bold.m-auto.text-center Asociación
+      .col-lg-3
+        img.mb-3(src="@/assets/curso/img33.svg", alt="Texto que describa la imagen" style="width: 75px").m-auto
+        .cuadro--cyanclaro.p-4
+          p.fw-bold.m-auto.text-center Agregación / Composición
+      .col-lg-3
+        img.mb-3(src="@/assets/curso/img34.svg", alt="Texto que describa la imagen" style="width: 75px").m-auto
+        .cuadro--cyanclaro.p-4
+          p.fw-bold.m-auto.text-center Generalización / Especialización. 
+            | HERENCIA
+    h3 Implementación de asociaciones
+    p.mb-5 La implementación de asociación en Java se realiza mediante el uso de un campo de instancia. La relación puede ser bidireccional y cada clase tiene una referencia a la otra. La agregación y la composición son tipos de relaciones de asociación. A continuación, se explicitan los tipos de relaciones:
+    TabsC.color-acento-botones.mb-5
+      .py-3.py-md-4(titulo="a- Asociación bidireccional")
+        .row
+          .col-lg-6.d-block.my-auto
+              img.mb-3(src="@/assets/curso/img35.svg", alt="Texto que describa la imagen" ).m-auto.d-block
+          .col-lg-6
+            h4 Asociación bidireccional
+            p.mb-5 Un cliente tiene una cuenta corriente y una cuenta pertenece a un dueño.
+              br
+              br
+              |Para realizar la implantación en Java de esta asociación bidireccional lo que se hace es:
+              br
+              br
+              |En la clase Cliente crear una instancia de la clase Cuenta y en la Clase Cuenta crear una instancia de la clase Cliente así:
+            a.boton.color-acento-botones.mb-5.indicador__container(@click="modal1 = true")
+              span 
+                b Ejemplo asociación bidireccional en Java
+              .indicador--click(v-if="mostrarIndicador")
+      .py-3.py-md-4(titulo="b- Asociación unidireccional")
+        .row
+          .col-lg-6.d-block.my-auto
+              img.mb-3(src="@/assets/curso/img38.svg", alt="Texto que describa la imagen" ).m-auto.d-block
+          .col-lg-6
+            h4 Asociación unidireccional:
+            p.mb-5 Un usuario tiene una clave.
+              br
+              br
+              |En Java esta relación unidireccional se implementa como un atributo dentro de la clase Usuario así.
+
+
+            a.boton.color-acento-botones.mb-5.indicador__container(@click="modal2 = true")
+              span 
+                b Ejemplo asociación unidireccional en Java
+              .indicador--click(v-if="mostrarIndicador")
+    ModalA.color-primario(:abrir-modal.sync="modal1")
+      .row.justify-content-center
+        .col-md-6.mb-4.mb-md-0.p-5
+          img.mb-3(src="@/assets/curso/img36.jpg", alt="Texto que describa la imagen" ).m-auto.d-block
+    ModalA.color-primario(:abrir-modal.sync="modal2")
+      .row.justify-content-center
+        .col-md-6.mb-4.mb-md-0.p-5
+          img.mb-3(src="@/assets/curso/img37.jpg", alt="Texto que describa la imagen" ).m-auto.d-block
+    h3 Implementación de composición / agregación
+    p.mb-5 La agregación es un tipo de relación que comprende a las clases y sus diferentes componentes, constituyendo un todo, a su vez, la composición en cambio es un tipo de agregación, donde cada componente solo puede pertenecer a un todo.
+      br
+      br
+      |La composición en Java consiste en crear una clase nueva agrupando objetos de clases que ya existen, los objetos contenidos se declaran con visibilidad private y se inicializan en el constructor de la clase.
+    .row.mb-5.justify-content-center
+      .col-lg-6
+        img.mb-3(src="@/assets/curso/img39.svg", alt="Texto que describa la imagen").m-auto
+    p.mb-5 El anterior ejemplo implementado en java quedaría de la siguiente manera
+    .row.justify-content-center.mb-5
+      .col-lg-12
+        .cajon-ejemplo-metodo-js3
+            .cajon.color-acento-botones.p-5.mb-4.justify-content-center
+              .row.justify-content-center
+                .col-lg-8
+                  img(src="@/assets/curso/img40.jpg", alt="Texto que describa la imagen" )
+                .col-lg-4
+                  p La imagen muestra la creación de la clase Torre con un atributo de tipo DiscoDuro, con un constructor que instancia un objeto disco, si destruimos la instancia de tipo Torre se destruye la instancia de tipo DiscoDuro.
+    p.mb-5 La agregación en Java es la relación que existe entre dos clases donde la clase agregada contiene una referencia de otra clase.
+    .row.mb-5.justify-content-center
+      .col-lg-6
+        img.mb-3(src="@/assets/curso/img41.svg", alt="Texto que describa la imagen").m-auto
+    p.mb-5 El siguiente código muestra como se hace la implementación del ejemplo anterior en Java:
+    .row.justify-content-center.mb-5
+      .col-lg-12
+        .cajon-ejemplo-metodo-js3
+            .cajon.color-acento-botones.p-5.mb-4.justify-content-center
+              .row.justify-content-center
+                .col-lg-8
+                  img(src="@/assets/curso/img42.jpg", alt="Texto que describa la imagen" )
+                .col-lg-4
+                  p La imagen muestra la creación de un atributo de tipo Parlante en la clase Torre, para vincular el objeto se crea un método ensamblar que recibe un parámetro de tipo parlante. En este caso si se destruye la instancia de tipo Torre no se destruye la instancia de tipo parlante.
+    h3 Implementación de herencia
+    p.mb-5 La imagen muestra la creación de un atributo de tipo Parlante en la clase Torre, para vincular el objeto se crea un método ensamblar que recibe un parámetro de tipo parlante. En este caso si se destruye la instancia de tipo Torre no se destruye la instancia de tipo parlante.
+    .row.justify-content-between.mb-5
+      .col-lg-5
+        .cuadro-primario.px-5.py-1
+          p.fw-bold.mb-0.my-auto.d-block.mt-5 class Empleado extends Persona {
+                    br
+                    .fw-bold          int ventas;
+                    .fw-bold
+                      |	}
+      .col-lg-6
+        p La herencia permite compartir automáticamente métodos y datos entre clases, subclases y objetos.
+          br
+          br
+          |En Java esto es posible mediante el uso de la palabra clave extends. Por lo tanto, la subclase se añade (se extiende) a la superclase.
+          br
+          br
+          |En el ejemplo anterior la clase Empleado extiende de la clase principal Persona heredando todos sus métodos y atributos.
+    .row.mb-5.justify-content-center
+      .col-lg-10
+        img.mb-3(src="@/assets/curso/img43.svg", alt="Texto que describa la imagen").m-auto
+    p.mb-5 La superClase Persona tiene los atributos de nombre, apellido, documento, que también los necesita la clase Cliente y la clase Empleado una de las ventajas de la herencia es la reutilización de código en este caso las dos clases hijas no necesitan volver a colocar los atributos porque ya los hereda de la clase persona.
+      br
+      br
+      |Implementado la relación de herencia del ejemplo Persona, Cliente y Empleado en java seria: 
+    .row.justify-content-between.mb-5
+      .col-1
+        img.mb-3(src="@/assets/curso/img44.svg", alt="Texto que describa la imagen")
+      .col-lg-11.col-md-10.col-md-9.d-block.m-auto
+        h6 Se crea la clase padre o superClase Persona, con sus atributos, constructores, métodos get y set.
+    .row.justify-content-center.mb-5
+      .col-lg-12
+        .cajon-ejemplo-metodo-js4
+            .cajon.color-acento-botones.p-5.mb-4.justify-content-center
+              .row.justify-content-center
+                .col-lg-8
+                  img(src="@/assets/curso/img46.jpg", alt="Texto que describa la imagen" )
+    .row.justify-content-between.mb-5
+      .col-1
+        img.mb-3(src="@/assets/curso/img45.svg", alt="Texto que describa la imagen")
+      .col-lg-11.col-md-10.col-md-9.d-block.m-auto
+        h6 Se crea la clase Cliente con su propio atributo categoría y su método mostrar datos, para heredar los atributos de la superClase Persona utilizamos la palabra reservada extends así:
+    .row.justify-content-center.mb-5
+      .col-lg-12
+        .cajon-ejemplo-metodo-js5
+            .cajon.color-acento-botones.p-5.mb-4.justify-content-center
+              .row.justify-content-center
+                .col-lg-8
+                  img.mb-3(src="@/assets/curso/img47.jpg", alt="Texto que describa la imagen" ) 
+                  p Cuando se extiende de la clase Persona hay que implementar el constructor que trae los atributos de nombre, apellido y documento de la clase persona, al hacer clic en el bombillo que señala la flecha azul o presionar Alt + Enter se crea el constructor           
+    .row.justify-content-center.mb-5
+      .col-lg-12
+        .cajon-ejemplo-metodo-js6
+            .cajon.color-acento-botones.p-5.mb-4.justify-content-center
+              .row.justify-content-center
+                .col-lg-8
+                  img.mb-3(src="@/assets/curso/img48.jpg", alt="Texto que describa la imagen" ) 
+                  p La imagen muestra la herencia de la clase persona con la creación del constructor.           
+    .row.justify-content-center.mb-5
+      .col-lg-12
+        .cajon-ejemplo-metodo-js7
+            .cajon.color-acento-botones.p-5.mb-4.justify-content-center
+              .row.justify-content-center
+                .col-lg-8
+                  img.mb-3(src="@/assets/curso/img49.jpg", alt="Texto que describa la imagen" ) 
+                  p La imagen muestra la herencia de la clase persona con la creación del constructor.          
+    .row.justify-content-center.mb-5
+      .col-lg-12
+        .cajon-ejemplo-metodo-js8
+            .cajon.color-acento-botones.p-5.mb-4.justify-content-center
+              .row.justify-content-center
+                .col-lg-8
+                  img.mb-3(src="@/assets/curso/img50.jpg", alt="Texto que describa la imagen" ) 
+                  p La imagen muestra la implementación de la herencia de la clase Empleado        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</template>
+
+<script>
+export default {
+  name: 'Tema3',
+  data: () => ({
+    modal1: false,
+    modal2: false,
+    // variables de vue
+  }),
+}
+</script>
+
+<style lang="sass" scoped></style>
