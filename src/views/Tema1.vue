@@ -7,7 +7,7 @@
       .titulo-principal__numero
         span 1
       h1 Características del lenguaje de programación orientada a objetos
-    p.mb-5 Aunque la POO se puede implementar en lenguajes como C y PASCAL, se hace muy pesada y confusa cuando es un programa de gran tamaño. Utilizar un lenguaje que este especialmente diseñado para soportar los conceptos de POO se vuelve más adecuado para implementarlos. Ya que dependiendo de las características que soportan los lenguajes y se pueden clasificar en las dos categorías siguientes, en lenguajes de programación basados en objetos y en lenguajes de programación orientados a objetos.
+    p.mb-5 Aunque la POO se puede implementar en lenguajes como C y PASCAL, se hace muy pesada y confusa cuando es un programa de gran tamaño. Utilizar un lenguaje que esté especialmente diseñado para soportar los conceptos de POO, se vuelve más adecuado para implementarlos. Ya que dependiendo de las características que soportan los lenguajes, se pueden clasificar en las dos categorías siguientes, en lenguajes de programación basados en objetos y en lenguajes de programación orientados a objetos.
       br
       br
       |La programación basada en objetos es el estilo de programación que soporta principalmente encapsulación e identidad de objetos y sus características principales se centran en:
@@ -29,17 +29,23 @@
         figure.mb-5
           img.mb-3(src="@/assets/curso/img3.svg", alt="Texto que describa la imagen")
           figcaption SENA, 2021
-    p.mb-5Entre los lenguajes que soportan estas características se incluyen C++, Smalltalk, Object Pascal y Java, aunque existe un gran número de lenguajes de programación basados en objetos y orientados a objetos. 
+    p.mb-5 Entre los lenguajes que soportan estas características se incluyen 
+      b C++, Smalltalk, Object Pascal y Java
+      b-none , aunque existe un gran número de lenguajes de programación basados en objetos y orientados a objetos. 
       br
       br
-      |En este componente se realizará la implementación de los conceptos de la POO en el lenguaje de programación Java, el cual es un lenguaje orientado a objetos desarrollado por Sun Microsystems presentado en el año 1995. Java traduce el código fuente java en instrucciones que son interpretadas por la máquina virtual de java (JVM, Java Virtual Machine). A diferencia de C y C++ en los que está inspirado. Este es un lenguaje interpretado (Andaluza & Garcilaso, 2012).
+      |En este componente se realizará la implementación de los conceptos de la POO en el lenguaje de programación Java, el cual es un lenguaje orientado a objetos desarrollado por Sun Microsystems presentado en el año 1995. Java traduce el código fuente Java en instrucciones que son interpretadas por la máquina virtual de Java (JVM, Java Virtual Machine). A diferencia de 
+      b C y C++  
+      b-none en los que está inspirado; este es un lenguaje interpretado (Andaluza & Garcilaso, 2012).
       br
       br
       |Sus características principales son: 
+      br
+      br
     .row.mb-5.justify-content-center
       .col-lg-10
         .titulo-sexto.color-acento-contenido
-          h5 Características_Java
+          h5 Características Java
         figure.mb-5
           img.mb-3(src="@/assets/curso/img4.svg", alt="Texto que describa la imagen")
           figcaption SENA, 2021
@@ -47,8 +53,8 @@
     .titulo-sexto.color-acento-contenido
           h5 Entornos de desarrollo Java
     .tabla-a.color-acento-botones.mb-5.text-center
-      table
-        caption SENA, 2021
+      table.text-center
+        caption SENA, 2021.
         thead
           tr
             th ID
@@ -67,15 +73,15 @@
             td
               img.mb-3(src="@/assets/curso/img6.svg", alt="Texto que describa la imagen" style="width: 288px").m-auto.mb-0
             td 
-              a(href="https://netbeans.apache.org/download/index.html" target="_blank" )
-                | https://netbeans.apache.org/download/index.html
+              a(href="http://www.eclipse.org/downloads/" target="_blank" )
+                | http://www.eclipse.org/downloads/
           tr
             td JBlue
             td
               img.mb-3(src="@/assets/curso/img7.svg", alt="Texto que describa la imagen" style="width: 88px").m-auto.mb-0
             td 
-              a(href="https://netbeans.apache.org/download/index.html" target="_blank")
-                | https://netbeans.apache.org/download/index.html
+              a(href="https://bluej.org/versions.html" target="_blank")
+                | https://bluej.org/versions.html
 
 
 

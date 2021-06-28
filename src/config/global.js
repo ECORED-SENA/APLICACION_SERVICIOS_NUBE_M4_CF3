@@ -2,7 +2,7 @@ export default {
   global: {
     componenteFormativo: 'Aplicación del paradigma orientado a objetos',
     descripcionCurso:
-      'Durante el transcurso de este componente formativo podrá abordar saberes relacionados a la implementación en el lenguaje de programación Java de clases, objetos, atributos, constructores, métodos, herencia y relaciones.',
+      'Durante el transcurso de este componente formativo podrá abordar saberes relacionados a la implementación en el lenguaje de programación Java, de clases, objetos, atributos, constructores, métodos, herencia y relaciones.',
     imagenBannerPrincipal: require('@/assets/curso/banner-princiapal.svg'),
     fondoBannerPrincipal: require('@/assets/curso/fondo-banner-principal.png'),
   },
@@ -76,7 +76,7 @@ export default {
           {
             icono: 'far fa-file-alt',
             numero: '3.2',
-            titulo: 'Implementación de composición / agregación',
+            titulo: 'Implementación de composición/agregación',
             hash: 't_3_2',
           },
           {
@@ -146,11 +146,11 @@ export default {
     {
       termino: 'IDE',
       significado:
-        'Entorno de Desarrollo Integrado que se utiliza para el desarrollo un código fuente o programa.',
+        ' Entorno de Desarrollo Integrado que se utiliza para el desarrollo de un código fuente o programa.',
     },
     {
       termino: 'JVM',
-      significado: 'Máquina Virtual de Java.',
+      significado: ' Máquina Virtual de Java.',
     },
   ],
   complementario: [
@@ -177,7 +177,7 @@ export default {
       texto:
         'Systemoff. (2020). Cómo implementar relaciones de asociación de los diagramas de clases en Java. YouTube. ',
       tipo: 'Video',
-      link: 'https://www.youtube.com/watch?v=BGStNPa0qR',
+      link: 'https://www.youtube.com/watch?v=BGStNPa0qRk',
     },
     {
       texto: 'ARIMETRICS. (2020). Qué es Entorno de desarrollo. ',

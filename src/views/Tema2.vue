@@ -13,28 +13,29 @@
       br
       br
       |Java determina en sus estándares de codificación convenciones para nombres de clases, métodos y atributos. Para las clases se define lo siguiente:
-    ol.lista-ol--cuadro
+    ol.lista-ol--cuadro.mb-5
         li 
           .lista-ol--cuadro__vineta
-            span 1
+            span <b> 1 </b>
           | La primera letra debe ser mayúscula.
         li 
           .lista-ol--cuadro__vineta
-            span 2
-          | Utilizar nomenclatura camelCase (por ej: un nombre compuesto por varias palabras: clase "CuentaAhorros").
+            span <b> 2 </b>
+          | Utilizar nomenclatura camelCase (por ejemplo: un nombre compuesto por varias palabras: clase "CuentaAhorros").
         li 
           .lista-ol--cuadro__vineta
-            span 3
+            span <b> 3 </b>
           | Los nombres deben ser sustantivos.
     .titulo-sexto.color-acento-contenido
           h5 Estructura de una clase en Java
-    .tabla-a.color-acento-botones.mb-5
+          
+    .tabla-a.color-acento-contenido.mb-5
       table
-        caption SENA, 2021
-        thead
+        caption SENA, 2021.
+        thead.text-center
           tr
-            th ID
-            th Logo
+            th Estructura de una clase en Java
+            th Ejemplo
         tbody
           tr
             td.text-center
@@ -79,7 +80,7 @@
       .col-lg-4
         figure.mb-5
           img.mb-3(src="@/assets/curso/img8.svg", alt="Texto que describa la imagen")
-          figcaption SENA, 2021
+          figcaption SENA, 2021.
       .col-lg-6
         figure.mb-5
           img.mb-3(src="@/assets/curso/img9.svg", alt="Texto que describa la imagen")
@@ -88,36 +89,50 @@
       h5 Implementación de la clase Producto en Java
     figure.mb-5
       img.mb-3(src="@/assets/curso/img10.svg", alt="Texto que describa la imagen")
-      figcaption SENA, 2021
+      figcaption SENA, 2021.
     .row.mb-5 
       .col-lg-8
-        p.mb-5 La creación de un objeto en Java es equivalente a decir que se está instanciando una clase. Cuando se hace la instancia se comparten los atributos y métodos de esta. Una sola clase puede tener varias instancias.
+        p.mb-5 La creación de un 
+          b objeto 
+          b-none en Java es equivalente a decir que se está instanciando una 
+          b clase.
+          b-none Cuando se hace la instancia se comparten los atributos y métodos de esta. Una sola clase puede tener varias instancias.
           br
           br
-          |Tomando como ejemplo la clase producto al instanciar un objeto estamos dando valores a sus atributos código, nombre y precio y accediendo a sus métodos obtenerPrecio y calcularTotal.
+          |Tomando como ejemplo la clase 
+          b producto 
+          b-none al instanciar un objeto estamos dando valores a sus atributos código, nombre y precio y accediendo a sus métodos 
+          b obtenerPrecio 
+          b-none y 
+          b calcularTotal.
       .col-lg-3
         figure.mb-5
           img.mb-3(src="@/assets/curso/img11.svg", alt="Texto que describa la imagen").m-auto.d-block
-    p.mb-5 Para instanciar un objeto de una clase en java se utiliza la palabra reservada new y se crea el objeto del tipo de la clase así:
+    p.mb-5 Para instanciar un objeto de una clase en Java se utiliza la palabra reservada 
+      b new 
+      b-none  y se crea el objeto del tipo de la clase así:
     .row.justify-content-center.mb-5
       .col-lg-8
         .cajon-ejemplo
-          .cajon.color-acento-botones.p-5.mb-4.justify-content-center
+          .cajon.color-acento-contenido.p-5.mb-4.justify-content-center
             p.d-inline-block Producto p = new
               br
               |Producto ();
             p Cuando instanciamos el objeto p este puede acceder a los métodos y atributos de la clase Producto que en este caso serían obtenerPrecio y calcularTotal así:  
             p.d-inline-block p.obtenerPrecio ();
               br  
-              |p.calcularTotal ():
+              |p.calcularTotal ();
+    br
+    br
     #t_2_1.titulo-segundo
-      h2 2.1. Atributos y métodos de la clase
+      h2 2.1 Atributos y métodos de la clase
     p.mb-5 Los atributos de una clase son definidos según esta sintaxis: 
       spam.color--cyanclaro.p-1
         b [modifVisibilidad] tipo nombreVariable [= valorInicial];
       br
       br
-      |modifVisibilidad: el modificador de visibilidad indica desde que parte del código se puede acceder a las variables o a los métodos y puede ser:
+      b modifVisibilidad: 
+      b-none el modificador de visibilidad indica desde que parte del código se puede acceder a las variables o a los métodos y puede ser:
     .row.mb-5
       .col-lg-4
         .tarjeta-avatar
@@ -127,7 +142,7 @@
           //- estas clases tambien tienen un modificador --borde
           .tarjeta.color--cyanclaro
             .p-4
-              h4.text-center Public: 
+              h4.text-center public: 
               p Indica que los atributos son accesibles desde cualquier lugar del programa. No hay restricciones en el alcance de los miembros de datos públicos.
       .col-lg-4
         .tarjeta-avatar
@@ -137,8 +152,8 @@
           //- estas clases tambien tienen un modificador --borde
           .tarjeta.color--cyanclaro
             .p-4
-              h4.text-center Private: 
-              p Indica que los atributos solo son accesibles dentro de la clase en la que se declaran.
+              h4.text-center private: 
+              p Indica que los atributos sólo son accesibles dentro de la clase en la que se declaran.
       .col-lg-4
         .tarjeta-avatar
           img(src='@/assets/curso/img14.svg' alt='AvatarTop' style="height: 120px ")
@@ -147,15 +162,17 @@
           //- estas clases tambien tienen un modificador --borde
           .tarjeta.color--cyanclaro
             .p-4
-              h4.text-center Protected: 
-              p Indica que los atributos son accesibles dentro del mismo paquete o sub-clases en paquetes diferentes. Al heredar si se puede usar desde la clase derivada.
+              h4.text-center protected: 
+              p Indica que los atributos son accesibles dentro del mismo paquete o sub-clases en paquetes diferentes. Al heredar sí se puede usar desde la clase derivada.
     p.mb-5 
       b tipo: 
       b-none es el tipo de la variable, pudiendo ser un tipo básico o un objeto.
     p.mb-5 A continuación, se relacionan los tipos de datos que existen en java:
+    .titulo-sexto.color-acento-contenido
+      h5 Tipos de datos en Java
     .tabla-a.color-acento-contenido.mb-5 
-      table
-        caption SENA, 2021
+      table.text-center
+        caption SENA, 2021.
         thead
           tr
             th Tipo
@@ -215,23 +232,24 @@
     ul.lista-ul--color.mb-5 
       li 
         i.fas.fa-check
-        | Por convención, en Java, los nombres de las variables empiezan con una letra minúscula y si es una palabra 
-      li 
-        i.fas.fa-check
-        | Compuesta la primera letra en Mayúscula con nomenclatura camelCase. 
+        p Por convención, en Java, los nombres de las variables empiezan con una letra minúscula y si es una palabra compuesta la primera letra en 
+          b Mayúscula 
+          b-none con nomenclatura 
+          b camelCase. 
       li 
         i.fas.fa-check
         | No pueden tener espacios ni iniciar con un número, ni caracteres especiales.
       li 
         i.fas.fa-check
-        | No puede ser el mismo que una palabra clave
+        | No puede ser el mismo que una palabra clave.
       li 
         i.fas.fa-check
         | No deben tener el mismo nombre que otras variables cuyas declaraciones aparezcan en el mismo ámbito.
+    p.mb-5 A continuación se presentan algunos ejemplos: 
     .row.justify-content-center.mb-5
       .col-lg-10
         .cajon-ejemplo
-          .cajon.color-acento-botones.p-5.mb-4.justify-content-center
+          .cajon.color-acento-contenido.p-5.mb-4.justify-content-center
             ul.lista-ul--color.color-secundario.mb-5 
               li.vineta-azul 
                 i.fas.fa-check
@@ -248,7 +266,7 @@
     .row.justify-content-center.mb-5
       .col-lg-10
         .cajon-ejemplo
-          .cajon.color-acento-botones.p-5.mb-4.justify-content-center
+          .cajon.color-acento-contenido.p-5.mb-4.justify-content-center
             p.mb-4 Se permite definir más de una variable, separándolas por coma, por ejemplo:
               br
               br
@@ -309,7 +327,7 @@
           .tarjeta.color--cyanclaro
             .p-4
               h4.text-center Modificador de visibilidad: 
-              p se aplican las mismas normas que para los atributos se debe indicar el modificador de acceso este puede ser público, privado o protegido.
+              p Se aplican las mismas normas que para los atributos, se debe indicar el modificador de acceso, este puede ser público, privado o protegido.
       .col-lg-4
         .tarjeta-avatar.mb-lg-0.mb-5
           img(src='@/assets/curso/img16.svg' alt='AvatarTop' style="height: 120px")
@@ -319,7 +337,7 @@
           .tarjeta.color--cyanclaro
             .p-4
               h4.text-center Tipo: 
-              p indica que los atributos solo son accesibles dentro de la clase en la que se declaran.
+              p Es el tipo de valor devuelto por el método, pudiendo ser int, char, String, etc.
       .col-lg-4
         .tarjeta-avatar.mb-lg-0.mb-5
           img(src='@/assets/curso/img17.svg' alt='AvatarTop' style="height: 110px ")
@@ -329,12 +347,12 @@
           .tarjeta.color--cyanclaro
             .p-4
               h4.text-center Nombre del método: 
-              p es el nombre que tendrá el método y debe cumplir con las siguientes convenciones:
+              p Es el nombre que tendrá el método y debe cumplir con las siguientes convenciones:
     .row.justify-content-center.mb-5
       .col-lg-8
         .cajon.color-acento-contenido.p-5.mb-4.justify-content-center
           h5 Nombres
-          p Los nombres de los métodos deberían ser verbos, todo el verbo en minúscula. Se pueden agregar sustantivos con la primera letra en mayúscula ejemplo: revisarCuenta ()
+          p Los nombres de los métodos deberían ser verbos, todo el verbo en minúscula. Se pueden agregar sustantivos con la primera letra en mayúscula. Ejemplo: revisarCuenta ()
     .row.justify-content-center.mb-5
       .col-lg-6
         .tarjeta-avatar-b.mb-lg-0.mb-3
@@ -345,7 +363,7 @@
           .tarjeta.color--cyanclaro
             .p-4
               h2 Lista de parámetros: 
-              p dentro de los paréntesis se escriben los parámetros, los parámetros son los atributos que recibe el método para poder operar correctamente, puede o no tener parámetros.
+              p Dentro de los paréntesis se escriben los parámetros, los parámetros son los atributos que recibe el método para poder operar correctamente, puede o no tener parámetros.
       .col-lg-6
         .tarjeta-avatar-b.mb-lg-0.mb-3
           img(src='@/assets/curso/img19.svg' alt='AvatarTop')
@@ -355,11 +373,14 @@
           .tarjeta.color--cyanclaro
             .p-4
               h2 Cuerpo del método {}: 
-              p para finalizar todo método de llevar un par de llaves, que es donde se escribe el código a ejecutar. (Nota: a diferencia de los atributos los métodos no finalizan con punto y coma).
+              p Para finalizar todo método debe llevar un par de llaves, que es donde se escribe el código a ejecutar. (
+                b Nota:
+                b-none  a diferencia de los atributos, los métodos no finalizan con punto y coma).
+    p.mb-5 A continuación se presentan algunos ejemplos de métodos: 
     .row.justify-content-center.mb-5
       .col-lg-10
         .cajon-ejemplo-metodo
-          .cajon.color-acento-botones.p-5.mb-4.justify-content-center
+          .cajon.color-acento-contenido.p-5.mb-4.justify-content-center
             p public int obtenerEdad ()
               br
               |{
@@ -373,7 +394,7 @@
     .row.justify-content-center.mb-5
       .col-lg-10
         .cajon-ejemplo-metodo
-          .cajon.color-acento-botones.p-5.mb-4.justify-content-center
+          .cajon.color-acento-contenido.p-5.mb-4.justify-content-center
             p public void cambiarEdad (int laEdad)
               br
               |{
@@ -387,6 +408,8 @@
               b cambiarEdad 
               b-none y recibe un parámetro de tipo entero, en el cuerpo del método asigna a la variable edad el valor del parámetro que viene almacenado en la variable 
               b laEdad.
+    br
+    br
     #t_2_2.titulo-segundo
       h2 2.2 Constructores y destructores
     p.mb-5 
@@ -394,7 +417,7 @@
       b-none de una clase es un método estándar para inicializar los objetos de esa clase, a su vez es un destructor de un método que se invoca automáticamente cuando el objeto se destruye.
     .row.mb-5
       .col-lg-7
-        p Se habla de un constructor cuando se instancia un objeto y es necesario inicializar sus variables con valores correctos. Un constructor es un método perteneciente a la clase que posee unas características especiales:
+        p Se habla de un constructor cuando se instancia un objeto y es necesario inicializar sus variables con valores correctos. Un constructor es un método perteneciente a la clase, que posee unas características especiales:
         ul.lista-ul--color.mb-5 
           li 
             i.fas.fa-check
@@ -405,7 +428,7 @@
           li 
             i.fas.fa-check
             | Se pueden crear varios, siempre y cuando tengan diferentes atributos.
-        p Dentro del código de un constructor generalmente suele existir inicializaciones de variables y objetos, para conseguir que el objeto sea creado con dichos valores iniciales.
+        p Dentro del código de un constructor generalmente suelen existir inicializaciones de variables y objetos, para conseguir que el objeto sea creado con dichos valores iniciales.
       .col-lg-5
         figure.mb-5
           img.mb-3(src="@/assets/curso/img20.jpg", alt="Texto que describa la imagen")
@@ -418,7 +441,7 @@
             .ms-3 {
             br
             .ms-3 } 
-        .cajon.color-acento-botones.p-4.mb-4.justify-content-center
+        .cajon.color-acento-contenido.p-4.mb-4.justify-content-center
             p.mb-0 {} El constructor posee un par de llaves, dentro de las cuales estará el código que se ejecutará al ser llamado el método.
       .col-lg-5 
         .row
@@ -426,60 +449,66 @@
             img(src="@/assets/curso/img21.svg", alt="Texto que describa la imagen"  )
           .col-9
             h5 modifVisibilidad: 
-            p se aplica las mismas normas que para atributos y métodos que debe indicar si son public, private o protected.
+            p Se aplica las mismas normas que para atributos y métodos que debe indicar si son public, private o protected.
         .row
           .col-3
             img(src="@/assets/curso/img22.svg", alt="Texto que describa la imagen" )
           .col-9 
             h5 nombreConstructor:  
-            p debe de coincidir con el nombre de la clase.
+            p Debe coincidir con el nombre de la clase.
         .row
           .col-3
             img(src="@/assets/curso/img23.svg", alt="Texto que describa la imagen" )
           .col-9 
             h5 listaParámetros: 
-            p es la lista de los parámetros que tomará la función separados por comas y definidos cada uno de ellos como: 
+            p Es la lista de los parámetros que tomará la función separados por comas y definidos cada uno de ellos como: 
               spam.spam-text--primario tipo nombreParámetro
             spam.color--cyanclaro.p-2
-              b ejemplo (int a, int b)
+              b ejemplo: (int a, int b)
     .row.justify-content-center.mb-5
       .col-lg-12
         .cajon-ejemplo-metodo-js1
-            .cajon.color-acento-botones.p-5.mb-4.justify-content-center
+            .cajon.color-acento-contenido.p-5.mb-4.justify-content-center
               .row.justify-content-center
                 .col-lg-7
                   img(src="@/assets/curso/img24.jpg", alt="Texto que describa la imagen" )
                 .col-lg-5
-                  p En el ejemplo de la clase producto se crea el constructor 
+                  p En el ejemplo de la clase Producto se crea el constructor 
                     b Producto 
-                    b-none que tiene el mismo nombre de la clase, con el modificador de visibilidad publico y su lista de parámetros, el cuál recibe los atributos y se los asigna a la variable de la clase.
+                    b-none que tiene el mismo nombre de la clase, con el modificador de visibilidad público y su lista de parámetros, el cual recibe los atributos y se los asigna a la variable de la clase.
     .row.justify-content-center.mb-5
       .col-lg-10
         .cajon.color-acento-botones.p-5.mb-4.justify-content-center
           p La palabra reservada 
             b this 
-            b-none hace referencia a los miembros de la propia clase eb el objeto actual; es decir, 
+            b-none hace referencia a los miembros de la propia clase en el objeto actual; es decir, 
             b this 
             b-none se refiere al objeto actual sobre el que está actuando un método determinado y se utiliza siempre que se quiera hacer referencia al 
             b objetoactual 
             b-none de la clase.
-    p.mb-5 Un constructor sin parámetros es llamado constructor vacío. Si no se define ningún constructor, el compilador crea un constructor por defecto. Esto permite crear objetos con “new Clase()” sin argumentos, aunque no se defina ningún constructor.
+    p.mb-5 Un constructor sin parámetros es llamado 
+      b constructor vacío. 
+      b-none Si no se define ningún constructor, el compilador crea un constructor por defecto. Esto permite crear objetos con 
+      b “new Clase()” 
+      b-none sin argumentos, aunque no se defina ningún constructor.
     .row.justify-content-center.mb-5
       .col-lg-10
         .cajon-ejemplo-metodo-js2
-            .cajon.color-acento-botones.p-5.mb-4.justify-content-center
+            .cajon.color-acento-contenido.p-5.mb-4.justify-content-center
               .row.justify-content-center
                 .col-6
                   img(src="@/assets/curso/img25.jpg", alt="Texto que describa la imagen" )
     .row.mb-5.justify-content-between
       .col-lg-7
-        p.me-5 Un destructor es un método opuesto a un constructor, este método en lugar de crear un objeto lo destruye liberando la memoria de la computadora para que pueda ser utilizada por alguna otra variable u objeto.
+        p.me-5 
+          b Un destructor 
+          b-none es un método opuesto a un constructor, este método en lugar de crear un objeto lo destruye, liberando la memoria de la computadora para que pueda ser utilizada por alguna otra variable u objeto.
           br
           br
           |En Java no existen los destructores, esto es gracias al recolector de basura de la máquina virtual de Java. Como su nombre lo dice, el recolector de basura recolecta todas las variables u objetos que no se estén utilizando y que no haya ninguna referencia a ellos por una clase en ejecución, liberando así automáticamente la memoria de nuestra computadora.
           br
           br
-          |Aunque Java maneja de manera automática el recolector de basura, el usuario también puede decir en que momento Java pase el recolector de basura con la instrucción.
+          |Aunque Java maneja de manera automática el recolector de basura, el usuario también puede decir en qué momento Java pase el recolector de basura con la instrucción.
           br
           br
           spam.color--cyanclaro.p-3
@@ -492,7 +521,7 @@
     p.mb-5 De métodos y modificadores, hay dos tipos básicos esenciales de miembros de la clase: público (public) y privado (private). 
     .row.mb-5.justify-content-between
       .col-lg-7
-        p.me-5 A los métodos y modificadores se puede acceder libremente a un miembro público mediante un código definido fuera de su clase. Se puede acceder a un miembro privado solo por otros métodos definidos por su clase. Es a través del uso de miembros privados que el acceso está controlado.
+        p.me-5 A los métodos y modificadores se puede acceder libremente a un miembro público, mediante un código definido fuera de su clase. Se puede acceder a un miembro privado solo por otros métodos definidos por su clase. Es a través del uso de miembros privados que el acceso está controlado.
           br
           br
           |Restringir el acceso a los miembros de una clase es una parte fundamental de la programación orientada a objetos, ya que ayuda a evitar el mal uso de un objeto; no obstante, al permitir el acceso a datos privados solo a través de un conjunto de métodos bien definidos, puede evitar que se asignen valores incorrectos a esos datos.
@@ -510,7 +539,9 @@
     .row.mb-5.justify-content-between
       .col-lg-5
         h5 Modificador de acceso por defecto (default)
-        p Cuando no se especifica ningún modificador de acceso para una clase, método o miembro de datos, se dice estar teniendo modificador de acceso; es decir, que tengan un modificador de acceso predeterminado, solo son accesibles dentro del mismo paquete.
+        p Cuando no se especifica ningún modificador de acceso para una clase, método o miembro de datos, se dice estar teniendo 
+          b modificador de acceso default 
+          b-none por defecto.
           br
           br
           |Los miembros de datos, clase o métodos que no se declaran utilizando ningún modificador de acceso; es decir, que tengan un modificador de acceso predeterminado, solo son accesibles dentro del mismo paquete.
@@ -518,12 +549,13 @@
         .row.justify-content-center.mb-5
           .col-lg-12
             .cajon-ejemplo
-                .cajon.color-acento-botones.p-5.mb-4.justify-content-center
+                .cajon.color-acento-contenido.p-5.mb-4.justify-content-center
                   p.fw-bold class Producto {
                     br
                     .ms-5.fw-bold void mostrar ()
                     .ms-5.fw-bold  {
                     .ms-5.fw-bold System.out.println(” Hola Mundo!”);
+                    .ms-5.fw-bold  	}
                     .fw-bold
                       |	}
     p.mb-5 La clase 
@@ -532,7 +564,9 @@
     .row.mb-5.justify-content-between
       .col-lg-5
         h5 Modificador de acceso privado (private)
-        p El modificador de acceso privado se especifica con la palabra clave private. Los métodos o los miembros de datos declarados como privados solo son accesibles dentro de la clase en la que se declaran. Además:
+        p El modificador de acceso privado se especifica con la palabra clave 
+          b private. 
+          b-none Los métodos o los miembros de datos declarados como privados sólo son accesibles dentro de la clase en la que se declaran. Además:
         ul.lista-ul--color
           li 
             i.fas.fa-check
@@ -544,16 +578,17 @@
         .row.justify-content-center.mb-5
           .col-lg-12
             .cajon-ejemplo
-                .cajon.color-acento-botones.p-5.mb-4.justify-content-center
+                .cajon.color-acento-contenido.p-5.mb-4.justify-content-center
 
                   p.fw-bold public class Producto {
                     br
                     .ms-5.fw-bold public class Producto {
                     .ms-5.fw-bold  {
                     .ms-5.fw-bold  	System.out.println(” Hola Mundo!”);
+                    .ms-5.fw-bold  	}
                     .fw-bold
                       |	}
-    p.mb-5 En este ejemplo tenemos el método mostrar con el modificador privado lo que quiere decir que si se llama a este método de otra clase no se visualizará.
+    p.mb-5 En este ejemplo tenemos el método mostrar con el modificador privado, lo que quiere decir que si se llama a este método de otra clase no se visualizará.
     .row.mb-5.justify-content-between
       .col-lg-5
         h5 Modificador de acceso protegido (protected)
@@ -568,7 +603,7 @@
         .row.justify-content-center.mb-5
           .col-lg-12
             .cajon-ejemplo
-                .cajon.color-acento-botones.p-5.mb-4.justify-content-center
+                .cajon.color-acento-contenido.p-5.mb-4.justify-content-center
                   p.fw-bold public class Producto {
                     br
                     .ms-5.fw-bold  	protected void mostrar ()
@@ -579,10 +614,11 @@
                       |	}
     .row.mb-5.justify-content-between
       .col-lg-5
-        h5 Modificador de acceso publico (public)
-        p El modificador de acceso público se especifica con la palabra clave public. Además: 
+        h5 Modificador de acceso público (public)
+        p El modificador de acceso público se especifica con la palabra clave 
           b public. 
-          b-none Además:
+          b-nonw Además: 
+          
         ul.lista-ul--color
           li 
             i.fas.fa-check
@@ -597,7 +633,7 @@
         .row.justify-content-center.mb-5
           .col-lg-12
             .cajon-ejemplo
-                .cajon.color-acento-botones.p-5.mb-4.justify-content-center
+                .cajon.color-acento-contenido.p-5.mb-4.justify-content-center
                   p.fw-bold public class Producto {
                     br
                     .ms-5.fw-bold  	 	public void mostrar ()
@@ -606,21 +642,41 @@
                     .ms-5.fw-bold  	}
                     .fw-bold
                       |	}
-    p.mb-5 Siguiendo con el ejemplo de la clase Producto, en este caso al declarar el método mostrar como 
-      b publico 
-      b-none permite acceder desde cualquier parte al método mostrar.
+    p.mb-5 Siguiendo con el ejemplo de la clase 
+      b Producto, 
+      b-nonw en este caso al declarar el método mostrar como público permite acceder desde cualquier parte al método mostrar.
     .row.mb-5.justify-content-between
       .col-lg-5
         h5 Métodos accesores
-        p Son los métodos que permiten obtener o modificar los atributos de un objeto y son de dos tipos get y set.
+        p Son los métodos que permiten obtener o modificar los atributos de un objeto y son de dos tipos 
+          b get 
+          b-none y 
+          b set.
           br
           br
-          |Los métodos get y set, son simples métodos que usamos en las clases para mostrar (get) o modificar (set) el valor de un atributo. El nombre del método siempre será get o set y a continuación el nombre del atributo, su modificador siempre es public, ya que se quiere mostrar o modificar desde fuera de la clase. Por ejemplo, getNombre o setNombre.
+          |Los métodos  
+          b get 
+          b-none y 
+          b set, 
+          b-none son simples métodos que usamos en las clases para mostrar (
+          b get
+          b-none ) o modificar (
+          b set
+          b-none ) el valor de un atributo. El nombre del método siempre será 
+          b get 
+          b-none o 
+          b set
+          b-none  y a continuación el nombre del atributo, su modificador siempre es 
+          b public,  
+          b-none ya que se quiere mostrar o modificar desde fuera de la clase. Por ejemplo, 
+          b getNombre 
+          b-none o 
+          b setNombre.
       .col-lg-6
         .row.justify-content-center.mb-5
           .col-lg-12
             .cajon-ejemplo
-                .cajon.color-acento-botones.p-5.mb-4.justify-content-center
+                .cajon.color-acento-contenido.p-5.mb-4.justify-content-center
                   p Sintaxis método get:
                   p.fw-bold public tipo_dato_atributo getAtributo (){     
                     br
@@ -635,23 +691,28 @@
         .row.justify-content-center.mb-5
           .col-lg-12
             .cajon-ejemplo
-                .cajon.color-acento-botones.p-5.mb-4.justify-content-center
-                  p Sintaxis método get:
-                  p.fw-bold Sintaxis método set:
+                .cajon.color-acento-contenido.p-5.mb-4.justify-content-center
+                  p.mt-5 Sintaxis método get:
                     br
-                    .fw-bold  public void setAtributo (tipo_dato_atributo variable){   
-                    .ms-5.fw-bold      this.atributo = variable;
+                    .fw-bold.my-5   public void setAtributo (tipo_dato_atributo variable){   
+                    .ms-5.fw-bold.mb-5      this.atributo = variable;
                     .fw-bold
                       |	}
     .row.justify-content-center.mb-5
       .col-lg-12
         .cajon-ejemplo-metodo-js3
-            .cajon.color-acento-botones.p-5.mb-4.justify-content-center
+            .cajon.color-acento-contenido.p-5.mb-4.justify-content-center
               .row.justify-content-center
                 .col-lg-8
                   img(src="@/assets/curso/img30.jpg", alt="Texto que describa la imagen" )
                 .col-lg-4
-                  p En el ejemplo se muestra la clase Producto con sus atributos codigo y nombre,  por cada uno de estos atributos encontramos sus métodos get y set para obtener y cambiar el valor de cada uno de ellos.
+                  p En el ejemplo se muestra la clase 
+                    b Producto 
+                    b-none con sus atributos 
+                    b codigo 
+                    b-none y nombre,  por cada uno de estos atributos encontramos sus métodos 
+                    b get 
+                    b-none y set para obtener y cambiar el valor de cada uno de ellos.
     #t_2_4.titulo-segundo
       h2 2.4 Sobrecarga de métodos (overload) 
     p.mb-5 Permite definir más de un constructor o método con el mismo nombre, con la condición de que no puede haber dos de ellos con el mismo número y tipo de parámetros. En resumen, la sobrecarga permite declarar métodos que se llamen igual pero que reciban parámetros diferentes (no puede haber 2 métodos con el mismo nombre y los mismos parámetros), por esta razón lo que define a qué método se ingresa, son los argumentos que se envían como parámetros.
@@ -659,14 +720,18 @@
           h5 Tipos de datos en Java
     .row.justify-content-center.mb-5
       .col-lg-12
-        .cajon-ejemplo-metodo-js3
-            .cajon.color-acento-botones.p-5.mb-4.justify-content-center
+        .cajon-ejemplo-metodo-js9
+            .cajon.color-acento-contenido.p-5.mb-4.justify-content-center
               .row.justify-content-center
                 .col-lg-8
                   img(src="@/assets/curso/img31.jpg", alt="Texto que describa la imagen" )
                 .col-lg-4
-                  p En el ejemplo se muestra una sobrecarga de constructores y una de métodos. Existe sobrecarga en los constructores Producto, ya que se crearon dos con el mismo nombre, pero con diferentes parámetros; el mismo caso pasa con el método descontarProducto, que está creado dos veces, pero con diferentes parámetros.
-        figcaption SENA, 2021
+                  p En el ejemplo se muestra una sobrecarga de constructores y una de métodos. Existe sobrecarga en los constructores 
+                    b Producto
+                    b-none , ya que se crearon dos con el mismo nombre, pero con diferentes parámetros; el mismo caso pasa con el método 
+                    b descontarProducto
+                    b-none , que está creado dos veces, pero con diferentes parámetros.
+        figcaption SENA, 2021.
 
 </template>
 
