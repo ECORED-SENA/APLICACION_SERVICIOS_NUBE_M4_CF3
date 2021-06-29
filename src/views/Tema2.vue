@@ -100,7 +100,7 @@
           br
           br
           |Tomando como ejemplo la clase 
-          b producto 
+          b Producto 
           b-none al instanciar un objeto estamos dando valores a sus atributos código, nombre y precio y accediendo a sus métodos 
           b obtenerPrecio 
           b-none y 
@@ -171,7 +171,7 @@
     .titulo-sexto.color-acento-contenido
       h5 Tipos de datos en Java
     .tabla-a.color-acento-contenido.mb-5 
-      table.text-center
+      table.text-center.b-none
         caption SENA, 2021.
         thead
           tr
@@ -180,49 +180,49 @@
             th Descripción
         tbody
           tr
-            <th colspan="3" class="color--amarilloclaro ; h5 ; th1 "> Números Enteros </th> 
-          tr
+            <th colspan="3" class="color--amarilloclaro , h5 , th1 , ms-5 "> Números Enteros </th> 
+          tr.tr1
             th byte
             th 8 bit
             th Entero de un byte
-          tr
+          tr.tr1
             th short
             th 16 bit
             th Entero corto
-          tr
+          tr.tr1
             th int
             th 32 bit
             th Entero
-          tr
+          tr.tr1
             th long
             th 64 bit
             th Entero Largo
         tbody
           tr
             <th colspan="3" class="color--naranjaclaro ; h5 ; th1  "> Números Reales </th> 
-          tr
+          tr.tr1
             th float
             th 32 bit
             th Flotante simple
-          tr
+          tr.tr1
             th double
             th 64 bit
             th Flotante doble
         tbody
           tr
             <th colspan="3" class="color--cyanclaro ; h5 ; th1  "> Cadenas de Texto </th> 
-          tr
+          tr.tr1
             th char
             th 16 bit
             th Un solo carácter
-          tr
+          tr.tr1
             th String
             th textos
             th Textos
         tbody
           tr
             <th colspan="3" class="color--azulclaro ; h5 ; th1  "> Otros </th> 
-          tr
+          tr.tr1
             th boolean
             th True o false
             th Valor booleano falso o verdadero
@@ -232,7 +232,7 @@
     ul.lista-ul--color.mb-5 
       li 
         i.fas.fa-check
-        p Por convención, en Java, los nombres de las variables empiezan con una letra minúscula y si es una palabra compuesta la primera letra en 
+        p.mb-0 Por convención, en Java, los nombres de las variables empiezan con una letra minúscula y si es una palabra compuesta la primera letra en 
           b Mayúscula 
           b-none con nomenclatura 
           b camelCase. 
@@ -376,7 +376,7 @@
               p Para finalizar todo método debe llevar un par de llaves, que es donde se escribe el código a ejecutar. (
                 b Nota:
                 b-none  a diferencia de los atributos, los métodos no finalizan con punto y coma).
-    p.mb-5 A continuación se presentan algunos ejemplos de métodos: 
+    p.mb-5 A continuación, se presentan algunos ejemplos de métodos: 
     .row.justify-content-center.mb-5
       .col-lg-10
         .cajon-ejemplo-metodo
@@ -464,7 +464,7 @@
             p Es la lista de los parámetros que tomará la función separados por comas y definidos cada uno de ellos como: 
               spam.spam-text--primario tipo nombreParámetro
             spam.color--cyanclaro.p-2
-              b ejemplo: (int a, int b)
+              b Ejemplo: (int a, int b)
     .row.justify-content-center.mb-5
       .col-lg-12
         .cajon-ejemplo-metodo-js1
@@ -478,7 +478,7 @@
                     b-none que tiene el mismo nombre de la clase, con el modificador de visibilidad público y su lista de parámetros, el cual recibe los atributos y se los asigna a la variable de la clase.
     .row.justify-content-center.mb-5
       .col-lg-10
-        .cajon.color-acento-botones.p-5.mb-4.justify-content-center
+        .cajon.color-acento-contenido.p-5.mb-4.justify-content-center
           p La palabra reservada 
             b this 
             b-none hace referencia a los miembros de la propia clase en el objeto actual; es decir, 
@@ -582,7 +582,7 @@
 
                   p.fw-bold public class Producto {
                     br
-                    .ms-5.fw-bold public class Producto {
+                    .ms-5.fw-bold private void mostrar() {
                     .ms-5.fw-bold  {
                     .ms-5.fw-bold  	System.out.println(” Hola Mundo!”);
                     .ms-5.fw-bold  	}
@@ -692,7 +692,7 @@
           .col-lg-12
             .cajon-ejemplo
                 .cajon.color-acento-contenido.p-5.mb-4.justify-content-center
-                  p.mt-5 Sintaxis método get:
+                  p.mt-5 Sintaxis método set:
                     br
                     .fw-bold.my-5   public void setAtributo (tipo_dato_atributo variable){   
                     .ms-5.fw-bold.mb-5      this.atributo = variable;

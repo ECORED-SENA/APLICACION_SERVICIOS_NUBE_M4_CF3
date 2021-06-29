@@ -207,6 +207,12 @@ export default {
     ],
     contenidoInstruccional: [
       {
+        nombre: 'Rafael Neftalí Lizcano Reyes',
+        cargo: 'Asesor metodológico y pedagógico',
+        centro: 'Centro Industrial del Diseño y la Manufactura ',
+        regional: 'Regional Santander',
+      },
+      {
         nombre: 'Zulema León Escobar',
         cargo: 'Experta Temática',
         centro: 'Centro de Teleinformática y Producción Industrial',
@@ -225,9 +231,9 @@ export default {
         regional: 'Regional Cauca',
       },
       {
-        nombre: 'Rafael Neftalí Lizcano Reyes',
-        cargo: 'Asesor metodológico y pedagógico',
-        centro: 'Centro Industrial del Diseño y la Manufactura ',
+        nombre: 'Jhana Johanna Bustillo Ardila',
+        cargo: 'Revisión de estilo',
+        centro: 'Centro Industrial del Diseño y la Manufactura',
         regional: 'Regional Santander',
       },
     ],
@@ -251,7 +257,7 @@ export default {
       },
       {
         nombre: 'Camilo Andres Bolaño Rey',
-        cargo: 'Desarrollo Front-End',
+        cargo: 'Desarrollo front-end',
         centro:
           'Centro Industrial del Diseño y la Manufactura Regional Santander',
       },

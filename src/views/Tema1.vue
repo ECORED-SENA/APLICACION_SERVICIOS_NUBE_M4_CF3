@@ -36,7 +36,7 @@
       br
       |En este componente se realizará la implementación de los conceptos de la POO en el lenguaje de programación Java, el cual es un lenguaje orientado a objetos desarrollado por Sun Microsystems presentado en el año 1995. Java traduce el código fuente Java en instrucciones que son interpretadas por la máquina virtual de Java (JVM, Java Virtual Machine). A diferencia de 
       b C y C++  
-      b-none en los que está inspirado; este es un lenguaje interpretado (Andaluza & Garcilaso, 2012).
+      b-none en los que está inspirado, este es un lenguaje interpretado (Andaluza & Garcilaso, 2012).
       br
       br
       |Sus características principales son: 
