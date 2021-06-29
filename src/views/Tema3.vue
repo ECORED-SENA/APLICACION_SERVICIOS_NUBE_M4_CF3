@@ -65,7 +65,7 @@
           .col-lg-6.d-block.my-auto
               img.mb-3(src="@/assets/curso/img38.svg", alt="Texto que describa la imagen" ).m-auto.d-block
           .col-lg-6
-            h4 Asociación unidireccional:
+            h4 Asociación unidireccional
             p.mb-5 Un usuario tiene una clave.
               br
               br

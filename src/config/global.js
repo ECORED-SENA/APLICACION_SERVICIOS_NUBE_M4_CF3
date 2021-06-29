@@ -214,18 +214,18 @@ export default {
       },
       {
         nombre: 'Zulema León Escobar',
-        cargo: 'Experta Temática',
+        cargo: 'Experta temática',
         centro:
           'Centro de Teleinformática y Producción Industrial Regional Cauca',
       },
       {
         nombre: 'Paula Andrea Taborda Ortiz',
-        cargo: 'Diseñadora Instruccional',
+        cargo: 'Diseñadora instruccional',
         centro: 'Centro de Diseño y Metrología Regional Distrito Capital',
       },
       {
         nombre: 'Andrés Felipe Velandia Espitia',
-        cargo: 'Revisor Metodológico y Pedagógico',
+        cargo: 'Revisor metodológico y pedagógico',
         centro: 'Centro de Diseño y Metrología Regional Cauca',
       },
       {

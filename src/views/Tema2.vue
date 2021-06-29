@@ -516,6 +516,8 @@
       .col-lg-5
         figure
           img(src="@/assets/curso/img26.jpg", alt="Texto que describa la imagen" )
+    br
+    br
     #t_2_3.titulo-segundo
       h2 2.3 Métodos accesores y modificadores
     p.mb-5 De métodos y modificadores, hay dos tipos básicos esenciales de miembros de la clase: público (public) y privado (private). 
@@ -536,7 +538,7 @@
       .col-lg-6
         figure
           img(src="@/assets/curso/img28.svg", alt="Texto que describa la imagen" )
-    .row.mb-5.justify-content-between
+    .row.mb-0.justify-content-between
       .col-lg-5
         h5 Modificador de acceso por defecto (default)
         p Cuando no se especifica ningún modificador de acceso para una clase, método o miembro de datos, se dice estar teniendo 
@@ -546,7 +548,7 @@
           br
           |Los miembros de datos, clase o métodos que no se declaran utilizando ningún modificador de acceso; es decir, que tengan un modificador de acceso predeterminado, solo son accesibles dentro del mismo paquete.
       .col-lg-6
-        .row.justify-content-center.mb-5
+        .row.justify-content-center
           .col-lg-12
             .cajon-ejemplo
                 .cajon.color-acento-contenido.p-5.mb-4.justify-content-center
@@ -561,7 +563,9 @@
     p.mb-5 La clase 
       b Producto 
       b-none tiene modificador de acceso default al igual que el método mostrar, esto quiere decir que no podrán ser accedidas desde otro paquete.
-    .row.mb-5.justify-content-between
+    br
+    br
+    .row.justify-content-between
       .col-lg-5
         h5 Modificador de acceso privado (private)
         p El modificador de acceso privado se especifica con la palabra clave 
@@ -575,20 +579,22 @@
             i.fas.fa-check
             | Las clases e interfaces no se pueden declarar como privadas (private).
       .col-lg-6
-        .row.justify-content-center.mb-5
+        .row.justify-content-center
           .col-lg-12
             .cajon-ejemplo
                 .cajon.color-acento-contenido.p-5.mb-4.justify-content-center
 
                   p.fw-bold public class Producto {
                     br
-                    .ms-5.fw-bold private void mostrar() {
-                    .ms-5.fw-bold  {
+                    .ms-5.fw-bold private void mostrar () 
+                    .ms-5.fw-bold {
                     .ms-5.fw-bold  	System.out.println(” Hola Mundo!”);
                     .ms-5.fw-bold  	}
                     .fw-bold
                       |	}
     p.mb-5 En este ejemplo tenemos el método mostrar con el modificador privado, lo que quiere decir que si se llama a este método de otra clase no se visualizará.
+    br
+    br
     .row.mb-5.justify-content-between
       .col-lg-5
         h5 Modificador de acceso protegido (protected)
@@ -612,7 +618,7 @@
                     .ms-5.fw-bold  	}
                     .fw-bold
                       |	}
-    .row.mb-5.justify-content-between
+    .row.justify-content-between
       .col-lg-5
         h5 Modificador de acceso público (public)
         p El modificador de acceso público se especifica con la palabra clave 
@@ -630,7 +636,7 @@
             i.fas.fa-check
             | No hay restricciones en el alcance de los miembros de datos públicos.
       .col-lg-6
-        .row.justify-content-center.mb-5
+        .row.justify-content-center
           .col-lg-12
             .cajon-ejemplo
                 .cajon.color-acento-contenido.p-5.mb-4.justify-content-center
@@ -645,6 +651,8 @@
     p.mb-5 Siguiendo con el ejemplo de la clase 
       b Producto, 
       b-nonw en este caso al declarar el método mostrar como público permite acceder desde cualquier parte al método mostrar.
+    br
+    br
     .row.mb-5.justify-content-between
       .col-lg-5
         h5 Métodos accesores
@@ -713,6 +721,8 @@
                     b-none y nombre,  por cada uno de estos atributos encontramos sus métodos 
                     b get 
                     b-none y set para obtener y cambiar el valor de cada uno de ellos.
+    br
+    br
     #t_2_4.titulo-segundo
       h2 2.4 Sobrecarga de métodos (overload) 
     p.mb-5 Permite definir más de un constructor o método con el mismo nombre, con la condición de que no puede haber dos de ellos con el mismo número y tipo de parámetros. En resumen, la sobrecarga permite declarar métodos que se llamen igual pero que reciban parámetros diferentes (no puede haber 2 métodos con el mismo nombre y los mismos parámetros), por esta razón lo que define a qué método se ingresa, son los argumentos que se envían como parámetros.
