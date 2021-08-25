@@ -13,7 +13,7 @@
         //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
         .bloque-texto-b.color-primario.p-4
           .bloque-texto-b__texto
-            h3.mb-0 La comunicación entre clases es posible sólo a través de la parte pública de las clases correspondientes.
+            h3.mb-0 La comunicación entre clases es posible solo a través de la parte pública de las clases correspondientes.
     p.mb-5 
       b Según G. Booch [Booch, 94] 
       b-none existen tres clases básicas de relaciones entre los objetos:
@@ -88,7 +88,7 @@
           img.mb-3(src="@/assets/curso/img37.jpg", alt="Texto que describa la imagen" ).m-auto.d-block
     #t_3_2.titulo-segundo
       h2 3.2 Implementación de composición/agregación
-    p.mb-5 La agregación es un tipo de relación que comprende a las clases y sus diferentes componentes, constituyendo un todo, a su vez, la composición en cambio es un tipo de agregación, donde cada componente sólo puede pertenecer a un todo.
+    p.mb-5 La agregación es un tipo de relación que comprende a las clases y sus diferentes componentes, constituyendo un todo, a su vez, la composición en cambio es un tipo de agregación, donde cada componente solo puede pertenecer a un todo.
       br
       br
       |La composición en Java consiste en crear una clase nueva agrupando objetos de clases que ya existen, los objetos contenidos se declaran con visibilidad private y se inicializan en el constructor de la clase.

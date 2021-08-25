@@ -95,7 +95,7 @@
         p.mb-5 La creación de un 
           b objeto 
           b-none en Java es equivalente a decir que se está instanciando una 
-          b clase.
+          b clase. 
           b-none Cuando se hace la instancia se comparten los atributos y métodos de esta. Una sola clase puede tener varias instancias.
           br
           br
@@ -132,7 +132,7 @@
       br
       br
       b modifVisibilidad: 
-      b-none el modificador de visibilidad indica desde que parte del código se puede acceder a las variables o a los métodos y puede ser:
+      b-none el modificador de visibilidad indica desde qué parte del código se puede acceder a las variables o a los métodos y puede ser:
     .row.mb-5
       .col-lg-4
         .tarjeta-avatar
@@ -153,7 +153,7 @@
           .tarjeta.color--cyanclaro
             .p-4
               h4.text-center private: 
-              p Indica que los atributos sólo son accesibles dentro de la clase en la que se declaran.
+              p Indica que los atributos solo son accesibles dentro de la clase en la que se declaran.
       .col-lg-4
         .tarjeta-avatar
           img(src='@/assets/curso/img14.svg' alt='AvatarTop' style="height: 120px ")
@@ -305,7 +305,7 @@
                   | estatura;
             .color--blanco.p-2.mb-4
               p.m-auto
-                b Nota:
+                b Nota: 
                 b-none todos los atributos terminan en punto y coma.
             p.mb-4 Los métodos se definen la siguiente manera:
             spam.spam-text--contenido 
@@ -395,7 +395,9 @@
       .col-lg-10
         .cajon-ejemplo-metodo
           .cajon.color-acento-contenido.p-5.mb-4.justify-content-center
-            p public void cambiarEdad (int laEdad)
+            p public void 
+              b cambiarEdad 
+              |(int laEdad)
               br
               |{
               br
@@ -436,7 +438,7 @@
     .row.mb-5
       .col-lg-7
         .color--cyanclaro.p-3.mb-3
-          p [modifVisibilidad] nombreConstructor (listaParámetros)]
+          p [modifVisibilidad] nombreConstructor (listaParámetros)
             br
             .ms-3 {
             br
@@ -570,7 +572,7 @@
         h5 Modificador de acceso privado (private)
         p El modificador de acceso privado se especifica con la palabra clave 
           b private. 
-          b-none Los métodos o los miembros de datos declarados como privados sólo son accesibles dentro de la clase en la que se declaran. Además:
+          b-none Los métodos o los miembros de datos declarados como privados solo son accesibles dentro de la clase en la que se declaran. Además:
         ul.lista-ul--color
           li 
             i.fas.fa-check
